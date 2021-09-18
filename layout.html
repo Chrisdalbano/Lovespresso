@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="container.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="msizecontainer.css">
+    <script type="text/javascript" src="scripts/interact.js"></script>
+        <script type="text/javascript" src="scripts/msizecontainer.js"></script>
+
+    <style>
+    .item1 { grid-area: header; }
+    .item2 { grid-area: menu; }
+    .item3 { grid-area: main; }
+    .item4 { grid-area: right; }
+    .item5 { grid-area: footer; }
+
+    .grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header header header header header'
+        'menu main main main right right'
+        'menu footer footer footer footer footer';
+    grid-gap: 10px;
+    }
+
+    .grid-container > div {
+    text-align: center;
+    font-size: 30px;
+
+    }
+    </style>
+
+    <title>Lovespresso</title>
+    <link rel = "icon" href = 
+"coffee-heart.png" 
+        type = "image/x-icon">
+</head>
+<body>
+  <style>
+    body{
+        background-image: url('capp.png');
+        background-repeat: no-repeat;
+        background-position-y: 15em;
+        background-position-x: 105em;
+        background-size: 35em;
+        background-position: fixed;
+    }
+</style>
+
+<div class="grid-container">
+  <div class="item1">
+    <div class="navBar">
+        <ul>
+            <li><a onclick="warns()">home</a></li>
+            <li><a>about</a></li>
+        </ul>
+    </div>
+  </div>
+  <div class="item2">Menu</div>
+  <div class="item3">
+    <div class ="content">
+        <h1 id="tit">lovespresso.</h1>
+        <hr style="width:25%;text-align:center">
+        <div class="captionUndTit">
+            <div class="sep">
+                <p>know your espresso drink</p>
+                <p>or craft your own</p>
+            </div>
+        </br></br>
+        <div class="two-container">
+          <div class="float-child">
+            <div class="g-c">
+              <p>select the size of your mug</p>
+              <div class="dropdown">
+
+               
+
+
+                  <button onclick="dropfunc()" class="dropbtn" onchange="setPictures(this);">Mug Size</button>
+                  <div id="myDropdown" class="dropdown-content" onchange="setPicture(this);">
+                  <option value="mugs/4oz">4oz</option>
+                  <option value="mugs/10oz">10oz</option>
+                  <option value="mugs/12oz">12oz</option>
+                  <option value="mugs/12oz">16oz</option>
+                  </div>
+                  <div class="mug-pic-selection">
+                    <img src="mugs/4oz.png" width="200" height="200"/>
+                  </div>
+
+                  <script type="text/javascript">
+
+                    function setPicture(selection) {
+                        var selection = document.getElementById("id");
+                        selection.options[select.selectedIndex].value;
+                    }
+                </script>
+            </div>
+          </div>
+          </div>
+          <div class="float-child">
+            <div class="b-c">
+              <p>first start introducing your ingredients (don't forget the <b>espresso</b>)</p>
+              <div class="webflow-style-input">
+                <input type="text" placeholder="Type your ingredients here" id="txt"></input>
+                <button type="button"><i class="icon ion-android-arrow-forward" onclick="JavaScript:add()">add</i></button>
+                
+              </div> 
+            </div>
+            
+            <label class="tl">your recipe will appear below</label>
+          </br></br>
+          <textarea disabled style="resize: none;" id="recipeBox" ></textarea> 
+          <button type="button"><i class="craftButtonClass">Craft drink</i></button> 
+          </br></br></br>
+            </div>
+          </div>
+            
+        </div>
+           
+    </div>
+  </div>  
+  <div class="item4">Right</div>
+  <div class="item5">Footer</div>
+</div>

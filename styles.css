@@ -1,0 +1,146 @@
+#tit{
+    padding-top: 80px;
+    padding-bottom: 8px;
+    font-size: 3em;
+    position: static;
+    align-self: center;
+    text-shadow: 3px 3px #d6d6d6;
+}
+.recipeBar{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+}
+
+body {
+    text-align: center;
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(184, 63, 33, 0.8);
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgba(218, 38, 26, 0.8);
+}
+
+
+ul {
+  font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(247, 104, 68, 0.8);
+    box-shadow: tomato;
+  }
+  
+  .navBar li {
+    float: left;
+  }
+  
+  .navBar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 40px;
+    text-decoration: none;
+  }
+  
+  .navBar a:hover {
+    background-color: rgba(184, 63, 33, 0.8);
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .navBar{
+    box-shadow: 0 2px 2px 0.5px rgba(0,0,0,.2);
+  }
+
+  .captionUndTit{
+    font-size: 13.5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+textarea{
+    border-style: none;
+    background: transparent;
+    outline: none;
+    flex-direction: column;
+    height: 10vh;
+    flex-grow: 1;
+    color: #fafafa;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    vertical-align: middle;position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1.4rem 2rem 1.6rem;
+    background: rgba(158, 66, 43, 0.8);
+}
+
+.tl{
+font-size: 18px;
+text-align-last: center;
+}
+
+.l-cont{
+  padding-left: 300px;
+  float: left;
+}
+
+.r-cont{
+  padding-right: 550px;
+ float: right; 
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
+
+.float-child {
+  width: 50%;
+  float: left;
+  padding: 20px;
+}  
+
+.two-container {
+  display: flex;
+}
+
+.flex-child {
+  flex: 1;
+  border: 2px solid yellow;
+}  
+
+.flex-child:first-child {
+  margin-right: 20px;
+} 
+
+#text-under-mug {
+  font-size: large;
+}

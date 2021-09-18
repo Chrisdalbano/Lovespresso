@@ -1,0 +1,119 @@
+
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+  } 
+  
+  body,
+  ul {
+    margin: 0;
+    padding: 0;
+  } 
+
+  input {
+    border-style: none;
+    background: transparent;
+    outline: none;
+  }
+  
+  button {
+    background: none;
+    border: none;
+    outline: none;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 8vh;
+    max-width: 1600px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  
+  @-webkit-keyframes gradient {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 100% 0;
+    }
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 100% 0;
+    }
+  }
+  .webflow-style-input {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 2px;
+    padding: 1.4rem 2rem 1.6rem;
+    background: rgba(247, 104, 68, 0.8);
+  }
+  .webflow-style-input:after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 999;
+    height: 2px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    background-position: 0% 0%;
+    background: linear-gradient(to right, #3f1e1e, #f4fcb1, #4b3c3e, #a86d29, #961302, #3f1a04);
+    background-size: 500% auto;
+    -webkit-animation: gradient 3s linear infinite;
+            animation: gradient 3s linear infinite;
+  }
+  
+  .webflow-style-input input {
+    flex-grow: 1;
+    color: #ffffff;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    vertical-align: middle;
+  }
+  .webflow-style-input input::-webkit-input-placeholder {
+    color: #ffffff;
+  }
+  
+  .webflow-style-input button {
+    color: #ffffff;
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    vertical-align: middle;
+    transition: color 0.25s;
+    cursor: pointer;
+  }
+  .webflow-style-input button:hover {
+    color: rgba(184, 63, 33, 0.8);
+  }
+
+  .craftButtonClass{
+    padding: 8px 10px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 2rem;
+    line-height: 4.4rem;
+    transition: color 0.25s;
+    background-color: #961302;
+    margin: 4px 2px;
+    cursor: pointer; 
+    border-radius: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal; 
+    box-shadow: black;
+  }
+
+  .craftButtonClass:hover{
+    background-color: #7c0f01;
+  }
